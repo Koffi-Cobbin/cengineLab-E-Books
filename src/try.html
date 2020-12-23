@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1> </h1> 
+        <p> Explore All About Engineering </p> 
+      </div>
+    <!-- <div class="page-header">
+    <h1>Stores <small>list of supported stores</small></h1>
+</div>
+<div class="list-group">
+    {% for store in stores %}
+    <a href="{{ url_for('stores.store_page', store_id=store._id ) }}" class="list-group-item">
+        <h4 class="list-group-item-title">{{ store.name }}</h4>
+        <p class="list-group-item-text">All URLs in this store should start wtih <strong>{{ store.url_prefix }}</strong></p>
+    </a>
+    {% endfor %}
+</div> -->
+
+<div id="about" class="container-fluid">
+    <div class="row">
+      <div class="page-header">
+        <h1>Course Materials  <small>  list of pdfs</small></h1>
+    </div>
+    <div class="list-group">
+       
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-title"> PDF </h4>
+            <a href=" {{ url_for('download', filename='COE-FULL-COURSE-OUTLINE-1.pdf') }} ">
+            <p class="list-group-item-text">
+                <img src="{{ url_for('static', filename='imgs/pdf_icon.png') }}" width="50" height="50"> View 
+            </p> </a>
+            
+            <!--  The line of code below displays the actual pdf content in a webpage -->
+            <!--<embed src="{{ url_for('static', filename='pdfs/COE-FULL-COURSE-OUTLINE-1.pdf', _external=True, as_attachment=True) }}" width="500" height="500"> -->
+        </a>
+    </div> 
+  </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-8 col-lg-5">
+            <h6 class="text-muted"> List Group with Images</h6>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Something page-header
+                    <div class="image-parent">
+                        <img src="static\imgs\pdf_icon.png" class="img-fluid" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-8 col-lg-5">
+            <h6 class="text-muted"> List Group with Images</h6>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Something page-header
+                    <div class="image-parent">
+                        <img src="static\imgs\pdf_icon.png" class="img-fluid" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-8 col-lg-5">
+            <h6 class="text-muted"> List Group with Images</h6>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Something page-header
+                    <div class="image-parent">
+                        <img src="static\imgs\pdf_icon.png" class="img-fluid" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
