@@ -12,7 +12,7 @@ def download(url=None, filename=None):
     return send_from_directory(directory=url, filename=filename, as_attachment=True)
 
 def get_pdfs():
-    path = 'static/pdfs'
+    path = 'src/static/pdfs'
     years = os.listdir(path)
     all_pdfs = []
     for year in years:
