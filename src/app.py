@@ -5,7 +5,7 @@ from werkzeug.utils import redirect
 
 
 app = Flask(__name__)
-app.secret_key =  app.secret_key = "1234" # os.environ.get("SECRETE_KEY")
+app.secret_key =  app.secret_key = os.environ.get("SECRETE_KEY")
 
 @app.route('/download/<path:url>/<string:filename>', methods=['GET', 'POST'])
 def download(url=None, filename=None):
