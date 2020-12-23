@@ -35,7 +35,7 @@
             <div class="image-parent">
                 <img src="static\imgs\pdf_icon.png" class="img-fluid" alt="" width="50" height="50">
             </div>
-            <a href="{{ url_for('download', url='static/pdfs/1st_year/first_sem', filename = _1001[ cnt[0] ] ) }}"><p class="list-group-item-text btn btn-primary" style="float: right; margin: 4px;"> Download </p></a>
+            <a href="{{ url_for('download', url='src/static/pdfs/1st_year/first_sem', filename = _1001[ cnt[0] ] ) }}"><p class="list-group-item-text btn btn-primary" style="float: right; margin: 4px;"> Download </p></a>
           </li>
           {% if cnt.append(cnt.pop() + 1) %} {% endif %} 
           {% endfor %}
@@ -69,7 +69,7 @@
             <div class="image-parent">
                 <img src="static\imgs\pdf_icon.png" class="img-fluid" alt="" width="50" height="50">
             </div>
-            <a href="{{ url_for('download', url = 'static/pdfs/1st_year/second_sem', filename = _1002[ cnt[0] ] ) }}"><p class="list-group-item-text btn btn-primary" style="float: right; margin: 4px;"> Download </p></a>
+            <a href="{{ url_for('download', url = 'src/static/pdfs/1st_year/second_sem', filename = _1002[ cnt[0] ] ) }}"><p class="list-group-item-text btn btn-primary" style="float: right; margin: 4px;"> Download </p></a>
           </li>
           {% if cnt.append(cnt.pop() + 1) %} {% endif %}
           {% endfor %}
