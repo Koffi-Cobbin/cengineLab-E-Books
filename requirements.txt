@@ -1,3 +1,5 @@
 Flask==1.1.1
 requests==2.24.0
 uwsgi
+Jinja2==2.8
+werkzeug==0.15.5
