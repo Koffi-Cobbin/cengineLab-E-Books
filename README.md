@@ -1,2 +1,2 @@
-# cengineLab-E-Books
-This service would be integrated into the the main application CengineLab
+# Pricing-Service
+This project tracks item prices in an online store and sends email to users when prices reduce.
