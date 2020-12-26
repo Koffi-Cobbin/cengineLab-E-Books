@@ -12,7 +12,7 @@ body{
 /* OVERLAY */
 
 .home-image-container .inside-text {
-    margin: 0 auto; 
+    margin: auto; 
     width: 60%;
 }
 
