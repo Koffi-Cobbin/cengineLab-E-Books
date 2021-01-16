@@ -31,7 +31,7 @@ def home():
 @app.route('/pdfs')
 def pdfs():
     all_pdfs = get_pdfs()
-    first_year_first_sem = all_pdfs[2]
+    first_year_first_sem = all_pdfs[7]
     first_year_second_sem = all_pdfs[3]
     second_year_first_sem = all_pdfs[6]
     second_year_second_sem = all_pdfs[7]
