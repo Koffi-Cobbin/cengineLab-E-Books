@@ -31,14 +31,14 @@ def home():
 @app.route('/pdfs')
 def pdfs():
     all_pdfs = get_pdfs()
-    first_year_first_sem = all_pdfs[0]
-    first_year_second_sem = all_pdfs[1]
-    second_year_first_sem = all_pdfs[2]
-    second_year_second_sem = all_pdfs[3]
-    third_year_first_sem = all_pdfs[4]
-    third_year_second_sem = all_pdfs[5]
-    fourth_year_first_sem = all_pdfs[6]
-    fourth_year_second_sem = all_pdfs[7]
+    first_year_first_sem = all_pdfs[2]
+    first_year_second_sem = all_pdfs[3]
+    second_year_first_sem = all_pdfs[6]
+    second_year_second_sem = all_pdfs[7]
+    third_year_first_sem = all_pdfs[0]
+    third_year_second_sem = all_pdfs[1]
+    fourth_year_first_sem = all_pdfs[4]
+    fourth_year_second_sem = all_pdfs[5]
     return render_template('home.html', 
         _1001 = first_year_first_sem,
         _1002 = first_year_second_sem,
